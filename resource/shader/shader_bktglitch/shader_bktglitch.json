@@ -3,9 +3,9 @@
   "uniforms": {
     "intensity": "FLOAT",
     "time": "FLOAT",
-    " resolution": "VEC2",
+    "resolution": "VEC2",
     "rngSeed": "FLOAT",
-    " randomValues": "VEC3",
+    "randomValues": "VEC3",
     "noiseTexture": "SAMPLER2D",
     "lineSpeed": "FLOAT",
     "lineDrift": "FLOAT",
