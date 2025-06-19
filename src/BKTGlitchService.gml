@@ -129,6 +129,7 @@ function BKTGlitchService() constructor {
       this.rng = Struct.getIfType(event.data, "rng", Boolean, this.rng)
     },
     "load-config": function(event) {
+      bktglitch_activate(this.width, this.height)
       var keys = Struct.keys(event.data)
       var size = GMArray.size(keys)
       for (var index = 0; index < size; index++) {
@@ -137,9 +138,12 @@ function BKTGlitchService() constructor {
         var item = Struct.get(BKTGlitchFields, key)
         __bktgtlich_setup_property(item.field, property.defValue, name, item.setter, property.minValue, property.maxValue)
       }
+      bktglitch_deactivate()
     },
     "clear-glitch": function(event) {
+      bktglitch_activate(this.width, this.height)
       bktglitch_config_zero()
+      bktglitch_deactivate()
     }
   }))
 
