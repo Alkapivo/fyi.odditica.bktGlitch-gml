@@ -1,4 +1,6 @@
 ///@package com.janvorisek.bktglitch
+show_debug_message("init bktGlitch_inline.gml")
+
 
 //////////////////////////////////
 //                              //

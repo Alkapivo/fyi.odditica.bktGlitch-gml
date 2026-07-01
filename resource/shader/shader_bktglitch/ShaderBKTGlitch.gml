@@ -1,4 +1,6 @@
 ///@package com.janvorisek.bktglitch.shader.bkt_glitch
+show_debug_message("init ShaderBKTGlitch.gml")
+
 
 ///@static
 ///@type {Struct}
